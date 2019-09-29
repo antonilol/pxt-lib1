@@ -33,7 +33,7 @@ namespace extra_img {
     export enum Position {
         //% block="left"
         left = 0,
-        //% block="centre"
+        //% block="center"
         centre = 1,
         //% block="right"
         right = 2
