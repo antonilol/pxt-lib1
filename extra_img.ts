@@ -98,6 +98,13 @@ namespace extra_img {
         }
         return output;
     }
+    //% block="pixel x $x y $y of $img" blockId=getpixel weight=94
+    //% x.min=0 x.max=4
+    //% y.min=0 y.max=4
+    export function getpixel(x:number,y:number,img:Image): boolean {
+        
+        return img.pixel(x,y);
+    }
     /**
      * Boolean operators for images
      * @param imgA eg:null
