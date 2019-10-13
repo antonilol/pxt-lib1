@@ -98,12 +98,23 @@ namespace extra_img {
         }
         return output;
     }
-    //% block="pixel x $x y $y of $img" blockId=getpixel weight=94
+    //% block="pixel x $x y $y of $img" blockId=getpixelbool weight=94
     //% x.min=0 x.max=4
     //% y.min=0 y.max=4
-    export function getpixel(x:number,y:number,img:Image): boolean {
+    export function getpixelbool(x:number,y:number,img:Image): boolean {
         
         return img.pixel(x,y);
+    }
+    //% block="pixel x $x y $y of $img" blockId=getpixelnumb weight=94
+    //% x.min=0 x.max=4
+    //% y.min=0 y.max=4
+    export function getpixelnumb(x:number,y:number,img:Image): number {
+        if (img.pixel(x,y)){
+            return 1;
+        } else {
+            return 0;
+        }
+        
     }
     /**
      * Boolean operators for images
