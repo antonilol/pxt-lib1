@@ -1,13 +1,6 @@
 //% color="#00FFFF" block="(Extra) Images" weight=100 icon="\uf03e"
 namespace extra_img {
-    export class Anim {
-        frames: Image[];
-        //% block="show $myAnim" parts="Anim"
-        show(): void {
-
-        }
-
-    }
+    
     export enum Operator {
         //% block="a and b"
         and = 0,
@@ -38,14 +31,7 @@ namespace extra_img {
         //% block="right"
         right = 2
     }
-    /**
-     * TODO [DEFAULT]
-     */
-    //% block="DELETED BLOCK" blockId=newPoint weight=91
-    export function newPoint(): void {
-
-
-    }
+  
 
     /**
      * TODO
