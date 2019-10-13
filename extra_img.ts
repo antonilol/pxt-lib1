@@ -1,4 +1,4 @@
-//% color="#007FFF" block="(Extra) Images" weight=100 icon="\uf03e"
+//% color="#00FFFF" block="(Extra) Images" weight=100 icon="\uf03e"
 namespace extra_img {
     export class Anim {
         frames: Image[];
@@ -174,7 +174,7 @@ namespace extra_img {
         for (let index = 0; index <= 24; index++) {
             if (numb >= 2 ** (24 - index)) {
                 numb += -1 * 2 ** (24 - index)
-                if (reversed) {
+                if (!(reversed)) {
                     output.setPixel((offset - index) % 5, Math.floor((offset - index) / 5), true)
                 } else {
                     output.setPixel((offset + 24 - index) % 5, Math.floor((offset + 24 - index) / 5), true)
