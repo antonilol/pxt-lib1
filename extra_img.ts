@@ -199,7 +199,7 @@ namespace extra_img {
                 if (!(reversed)) {
                     output.setPixel((offset - index) % 5, Math.floor((offset - index) / 5), true)
                 } else {
-                    output.setPixel((offset + 24 - index) % 5, Math.floor((offset + 24 - index) / 5), true)
+                    output.setPixel((24 - (offset - index)) % 5, Math.floor((24 - (offset - index)) / 5), true)
                 }
             }
         }
