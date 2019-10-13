@@ -79,7 +79,25 @@ namespace extra_img {
         }
         return output
     }
-
+    /**
+     * TODO
+     */
+    //% block="screen" blockId=screen weight=97
+    export function screen(): Image {
+        let output= images.createImage(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `);
+        for (let x = 0; x < 5; x++) {
+             for (let y = 0; y < 5; y++) {
+                 output.setPixel(y, x, led.point(y,x));
+             }
+        }
+        return output;
+    }
     /**
      * Boolean operators for images
      * @param imgA eg:null
